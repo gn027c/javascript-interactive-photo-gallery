@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interactive JavaScript Photo Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src="js/gallery.js"></script>
+</head>
+<body>
+
+	<header>
+		<h1>Interactive Photo Gallery</h1>
+		<p class="subtitle">Hover over any thumbnail below to display it in the main viewer</p>
+	</header>
+
+	<main>
+		<div id="image">
+			Hover over an image below to display here.
+		</div>
+
+		<div class="thumbnails-container">
+			<img class="preview"
+				 alt="Styling with a Band"
+				 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
+				 onmouseover="upDate(this)"
+				 onmouseout="unDo()">
+
+			<img class="preview"
+				 alt="With My New Hoodie"
+				 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+				 onmouseover="upDate(this)"
+				 onmouseout="unDo()">
+
+			<img class="preview"
+				 alt="Young Puppy"
+				 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
+				 onmouseover="upDate(this)"
+				 onmouseout="unDo()">
+		</div>
+	</main>
+
+	<footer>
+		<p>University of Michigan - Interactivity with JavaScript: Interactive Photo Gallery Assignment</p>
+	</footer>
+
+</body>
+</html>
